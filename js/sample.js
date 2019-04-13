@@ -5,6 +5,7 @@ var hour = time.getHours();
 $(document).ready(function () {
 
     var topmain = document.getElementById("top-main")
+    //以下switch文めっちゃうましか、mt_sgi許すまじ
     switch (hour) {
         //朝
         case 5:

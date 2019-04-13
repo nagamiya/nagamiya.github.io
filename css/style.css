@@ -148,25 +148,31 @@ header {
   font-size: 24px;
 }
 
-/* about ================================ */
-.about-main {
+/* commons ================================ */
+.contents-main {
   padding: 180px 8% 0;
   color: white;
 }
 
-.about-main h2 {
+.contents-main h2 {
   font-size: 64px;
   font-weight: 500;
   line-height: 1.4;
 }
 
-.about-main p {
+.contents-main p {
   font-weight: 200;
   font-size: 20px;
 }
 
-.about-img {
+.contents-img {
   width: 84%;
+}
+
+/* commons ================================ */
+.commons-message {
+  margin-top: 20%;
+  position: relative;    
 }
 
 /* フォーム================================ */
