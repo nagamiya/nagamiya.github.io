@@ -38,7 +38,7 @@ form input[type="submit"] {
 /* 共通レイアウト ================================ */
 body {
   color: #2d3133;
-  background-color: #3ecdc6;
+  background-color: #383634;
   margin: 0;
   min-height: 1vh;
 }
@@ -171,8 +171,13 @@ header {
 
 /* commons ================================ */
 .commons-message {
-  margin-top: 20%;
-  position: relative;    
+  margin: 15% 0 10% 0;
+  position: relative;  
+  float: left;
+  padding-left: 20px;
+  color: white;
+  font-size: 22px;
+  line-height: 64px;  
 }
 
 /* フォーム================================ */
@@ -245,6 +250,73 @@ header {
   width: 100%;
   border-radius: 0 0 2px 2px;
   font-size: 14px;
+}
+/* PhotoGarrely =========================== */
+.phototype-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+.phototype-box {
+  position: relative;
+  display: table-cell;
+}
+.phototype-image {
+  display: block;
+  width: 100%;
+  margin: 0 0 67%;
+}
+.phototype-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  overflow-y: auto;
+}
+.phototype-description-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.phototype-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.0rem;
+  line-height: 2;
+}
+.phototype-text .button {
+  width: 60%;
+  margin-top: 20px;
+  padding: 3px;
+  color: white;
+}
+.phototype-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.2;
+  transform: scaleY(-1);
+}
+
+.phototype-box.hikouki::after {
+  background-image: url('../image/icon_hikouki.jpg');
+}
+
+.phototype-box:nth-child(odd) .phototype-image {
+  margin: 60% 0 0;
+}
+.phototype-box:nth-child(odd) .phototype-description,
+.phototype-box:nth-child(odd)::after {
+  top: 0;
 }
 
 /* スマホだけに適用するCSS */

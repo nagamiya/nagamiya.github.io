@@ -36,7 +36,8 @@ $(document).ready(function () {
         case 21:
         case 22:
         case 23:
-        case 24:
+         //   case 24:だと出なかった、うわああああああああ１日かかって発覚した原因
+        case 0:
         case 1:
         case 2:
         case 3:
