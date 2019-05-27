@@ -3,9 +3,13 @@ var time = new Date();
 var hour = time.getHours();
 //alert(hour);
 $(document).ready(function () {
+    index_gradient();
+});
 
+function index_gradient() { 
     var topmain = document.getElementById("top-main")
     //以下switch文めっちゃうましか、mt_sgi許すまじ
+    //せめて配列とかにグラデ数値入れておいて、時間をインデックスとして暑かった方がましだったよね
     switch (hour) {
         //朝
         case 5:
@@ -36,7 +40,7 @@ $(document).ready(function () {
         case 21:
         case 22:
         case 23:
-         //   case 24:だと出なかった、うわああああああああ１日かかって発覚した原因
+        //   case 24:だと出なかった、うわああああああああ１日かかって発覚した
         case 0:
         case 1:
         case 2:
@@ -44,6 +48,6 @@ $(document).ready(function () {
         case 4:
             $(".top-main").css("background-image", "linear-gradient(rgba(0,4,40, 0.4),rgba(0,78,146, 0.5)), url(image/mone.jpg)");
             break;
-
     }
-});
+}
+
