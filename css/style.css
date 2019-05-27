@@ -162,7 +162,7 @@ header {
 
 .contents-main p {
   font-weight: 200;
-  font-size: 20px;
+  font-size: 80%;
 }
 
 .contents-img {
@@ -176,7 +176,7 @@ header {
   float: left;
   padding-left: 20px;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 64px;  
 }
 
@@ -285,15 +285,43 @@ header {
 .phototype-text {
   display: table-cell;
   vertical-align: middle;
-  font-size: 1.0rem;
+  font-size: 80%;
   line-height: 2;
+  text-align: center;
 }
 .phototype-text .button {
   width: 60%;
   margin-top: 20px;
   padding: 3px;
   color: white;
+  
 }
+.phototype-text .button::before,
+.phototype-text .button::after{
+  border-bottom: solid 1px white;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 0;
+}
+.phototype-text .button::before{
+  left: 0%;
+}
+.phototype-text .button::after{
+  right: 0%;
+}
+.phototype-text .button:hover::after,
+.phototype-text .button:hover::before{
+  width: 100%;
+  
+  
+}
+.phototype-text .button:hover{
+  
+}
+
 .phototype-box::after {
   content: '';
   position: absolute;
