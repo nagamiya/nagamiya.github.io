@@ -362,23 +362,41 @@ header {
   .development-example .btn{
     cursor: pointer;
   }
-  .development-example p{
+  .development-example {
     padding-left: 20px;
   }
+
 
 .sample-image img{
   width: 100%;
   height: auto;
   max-width: 100%;
+
 }
 
 .sample-text {
   width: 60%;
-  height: 100%;
+  height: auto;
   font-size: 110%;
   border: white solid 1px;
-  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  position: relative;
 }
+
+  .sample-text p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+    width: 80%;
+    text-align: center;/*一応BOX内の文字も中央寄せ*/
+    
+    
+  }
+
 
 
 /* スマホだけに適用するCSS */

@@ -50,20 +50,3 @@ function index_gradient() {
             break;
     }
 }
-
-/*
-document.getElementsByClassName("btn").onclick = function () {
-    alert("button");
-    console.log("aaaa");
-    // ここに#buttonをクリックしたら発生させる処理を記述する
-    var div_ds = document.getElementsByClassName("development-sample")
-    
-    if (div_ds.style.display == "flex") {
-        // noneで非表示
-        div_ds.style.display = "none";
-    } else {
-        // blockで表示
-        div_ds.style.display = "flex";
-    }
-};
-*/
