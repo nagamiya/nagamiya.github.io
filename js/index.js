@@ -1,7 +1,7 @@
+//indexの時間表示用
 var nowTime, nowYear, nowMonth, nowDate, nowHour, nowMin, nowSec;
-$(document).ready(function () {
+$().ready(function () {
     index_gradient();
-
     setInterval('showClock1()', 1000);
 });
 
@@ -36,6 +36,7 @@ function set2fig(num) {
     return ret;
 }
 
+//indexのグラデーション用
 function index_gradient() { 
     var topmain = document.getElementById("top-main")
     //以下switch文めっちゃうましか、mt_sgi許すまじ
