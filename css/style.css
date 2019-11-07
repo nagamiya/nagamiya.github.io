@@ -359,6 +359,7 @@ header {
 
 .development-example{
   font-size: 110%;
+  margin-bottom: 50px;
 }
   .development-example .btn{
     cursor: pointer;
@@ -366,12 +367,19 @@ header {
   .development-example {
     padding-left: 20px;
   }
+  .example-text .btn:after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: linear-gradient(to right, rgb(16, 91, 161), #4fcdff);
+  }
 
 
 .sample-image img{
   width: 100%;
   height: auto;
   max-width: 100%;
+  
 
 }
 
