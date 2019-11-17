@@ -1,8 +1,11 @@
 //indexの時間表示用
 var nowTime, nowYear, nowMonth, nowDate, nowHour, nowMin, nowSec;
+
+/* 準備 */
 $().ready(function () {
     index_gradient();
     setInterval('showClock1()', 1000);
+    index_comments()
 });
 
 $(function () {
@@ -80,5 +83,25 @@ function index_gradient() {
             $(".top-main").css("background-image", "linear-gradient(rgba(0,4,40, 0.4),rgba(0,78,146, 0.5)), url(image/mone.jpg)");
             break;
     }
+}
+
+function index_comments() { 
+    random = Math.floor(Math.random() * 3)
+    ms1_text = "", ms2_text = ""
+    ms1_obj = document.getElementById("contents-ms1")
+    ms2_obj = document.getElementById("contents-ms2")
+    
+    if (random == 0) {
+        ms1_text = "Nagamiya is"
+        ms2_text = "KYOMU-USA's mother."
+    } else if (random == 1) {
+        ms1_text = "The lunch menu of "
+        ms2_text = "Yakiniku-Toraji is delicious."
+    } else { 
+        ms1_text = "DQ10 version2"
+        ms2_text = "CLEAR !!"
+    }
+    ms1_obj.innerHTML = ms1_text
+    ms2_obj.innerHTML = ms2_text
 }
 
