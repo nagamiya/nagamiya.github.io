@@ -257,6 +257,26 @@ header {
   border-radius: 0 0 2px 2px;
   font-size: 14px;
 }
+/* About =========================== */
+.my-profile-main {
+  margin-top: ;
+}
+  .profile_contents {
+    margin-bottom: 20px;
+  }
+    .profile_contents p{
+      font-size: 120%;
+      text-align: center;
+    }
+
+    .profile_contents_message {
+      font-size: 70%;
+      padding-left: 20px;
+    }
+    .profile_contents_message a {
+      color: white;
+    }
+
 /* PhotoGarrely =========================== */
 
 .phototype-box {
