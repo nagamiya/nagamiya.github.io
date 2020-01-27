@@ -276,6 +276,9 @@ header {
     .profile_contents_message a {
       color: white;
     }
+    .profile_contents_message a:hover{
+      color: ;
+    }
 
 /* PhotoGarrely =========================== */
 
