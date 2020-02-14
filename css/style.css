@@ -259,10 +259,18 @@ header {
 }
 /* About =========================== */
 .my-profile-main {
-  margin-top: ;
+  /*margin-top: ;*/
+  color: white;
 }
+  .commons-message a {
+    color: white;
+  }
+  .commons-message a:hover{
+    color:  #51c9f9;
+  }
   .profile_contents {
     margin-bottom: 20px;
+    
   }
     .profile_contents p{
       font-size: 120%;
@@ -277,8 +285,9 @@ header {
       color: white;
     }
     .profile_contents_message a:hover{
-      color: ;
+      color: #51c9f9;
     }
+
 
 /* PhotoGarrely =========================== */
 
