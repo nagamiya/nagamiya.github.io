@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/jquery-3.3.0.min.js"></script>
+    <script type="text/javascript" src="js/about.js"></script>
     <title>Nagamiya World</title>
     <!-- ビューポートの設定 -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -32,7 +33,7 @@
         <div class="wrapper">
             <div class="my-profile-main">
                 <div class="profile_contents">
-                    <p>最近</p>
+                    <p onclick="change_hidden(0)">最近</p>
                     <div class="profile_contents_message">
                         <p>最近ドラゴンクエスト10始めました。自キャラ（エルフ女/ウェディ男）への愛が強いです。</p>
                         <p>Fate系統を履修しています、FGOは万年フレンド募集中です。</p>
@@ -41,7 +42,7 @@
                     <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
                 </div>
                 <div class="profile_contents">
-                    <p>性格</p>
+                    <p onclick="change_hidden(1)">性格</p>
                     <div class="profile_contents_message">
                         <p>意外と真面目って言われます、学部長からは自己評価低すぎると呆れられてしまいました...</p>
                         <p>自信を持てるようになるためにもこのwebサイト作ったりしています。進捗出ると自信が身につく気がしています。</p>
@@ -50,7 +51,7 @@
                     <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
                 </div>
                 <div class="profile_contents">
-                    <p>好きなこと</p>
+                    <p onclick="change_hidden(2)">好きなこと</p>
                     <div class="profile_contents_message">
                         <p>美味しいもの食べること + ゲーム + 読書（広義）+ 落書き +　ピアス収集</p>
                         <p>インスタは大体食べたもののログになってます。</p>
@@ -58,7 +59,7 @@
                     <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
                 </div>
                 <div class="profile_contents">
-                    <p>アルバイト</p>
+                    <p onclick="change_hidden(3)">アルバイト</p>
                     <div class="profile_contents_message">
                         <p>小学生向けプログラミングスクールで、iPhoneアプリ開発コースのメンターをしています。</p>
                         <p>生徒3~6人に対してメンター1~2人の体制で、生徒の進捗/モチベーション管理しています。楽しい。</p>
@@ -66,7 +67,7 @@
                     <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
                 </div>
                 <div class="profile_contents">
-                    <p>高校について</p>
+                    <p onclick="change_hidden(4)">高校について</p>
                     <div class="profile_contents_message">
                         <p>工業高校の情報工学科出身です。高校時代は毎週手書きレポートでした、懐かしい。</p>
                         <p>このままだとコミュニケーション力が身につかないと思ったので、大学はグループワーク等が多いところを選びました。</p>
@@ -74,7 +75,7 @@
                     <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
                 </div>
                 <div class="profile_contents">
-                    <p>大学について</p>
+                    <p onclick="change_hidden(5)">大学について</p>
                     <div class="profile_contents_message">
                         <p>晴れてグループワークや演習が多い、希望通りの大学で生徒をしています。</p>
                         <p>デザイン系と悩んでネットワークシステムのコースに進みました。<br>
@@ -85,6 +86,7 @@
                     </div>
                     <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
                 </div>
+                
             </div>
         </div>
     </div>
