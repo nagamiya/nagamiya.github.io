@@ -441,8 +441,14 @@ header {
     transform : translate(-50%,-50%);
     width: 80%;
     text-align: center;/*一応BOX内の文字も中央寄せ*/
-    
-    
+  }
+
+  .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
   }
 
 
@@ -490,14 +496,13 @@ header {
   }
   .sample-text {
     width: 100%;
-    height: 100px;
+    height: 120px;
     max-width: 100%;
-    min-height: 100px;
+    min-height: 120px;
     border: white solid 1px;
     margin-bottom: 10px;
     margin-left: 0px;
     padding: 10px;
-
 }
 
   .sample-text p {
@@ -507,7 +512,7 @@ header {
     -webkit-transform : translate(-50%,-50%);
     transform : translate(-50%,-50%);
     width: 80%;
-    text-align: center;/*一応BOX内の文字も中央寄せ*/ 
+    text-align: center;
     
   }
 
