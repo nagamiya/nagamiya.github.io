@@ -348,12 +348,7 @@ header {
 }
 .phototype-text .button:hover::after,
 .phototype-text .button:hover::before{
-  width: 100%;
-  
-  
-}
-.phototype-text .button:hover{
-  
+  width: 100%; 
 }
 
 .phototype-box::after {
@@ -514,6 +509,13 @@ header {
     width: 80%;
     text-align: center;
     
+  }
+
+
+
+
+  .phototype-text .button:action {
+    width: 100%; 
   }
 
 
