@@ -11,7 +11,7 @@ $().ready(function () {
 $(function () {
     $('#top-contents').mouseover(
         function () {
-            $("#RealtimeClockArea").text("時間帯によってグラデーションが変わるよ")
+            $("#RealtimeClockArea").text("時間帯でグラデーションが変わるよ")
         }
     );
 });

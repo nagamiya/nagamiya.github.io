@@ -257,6 +257,19 @@ header {
   border-radius: 0 0 2px 2px;
   font-size: 14px;
 }
+/* index =========================== */
+#RealtimeClockArea {
+  font-size: 80px;
+  font-weight: 300;
+}
+
+#contents-ms1,
+#contents-ms2 {
+  font-weight: 200;
+}
+
+
+
 /* About =========================== */
 .my-profile-main {
   /*margin-top: ;*/
@@ -456,6 +469,12 @@ header {
 	{
 		font-size: 13px ;	/* 文字サイズ */
   }
+
+  #RealtimeClockArea {
+    font-size: 40px;
+    font-weight: 300;
+  }
+
   .contents-main h2 {
     font-size: 24px;
   }
