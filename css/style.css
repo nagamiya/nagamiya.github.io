@@ -289,6 +289,9 @@ header {
       font-size: 120%;
       text-align: center;
     }
+    .title:hover{
+      color: #51c9f9;
+    }
 
     .profile_contents_message {
       font-size: 70%;
