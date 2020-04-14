@@ -24,23 +24,21 @@
         </ul>
 
     </header>
-    <!-- なんかあれ、画像デーンって置きたいね、その上に文字配置するやつやりたい -->　　　
+   　
     <div class="contents-main">
         <div class="commons-message">
             <h2>お勉強</h2>
             <p>
-                今までの開発物とかやりたいこととか<br>
-                コンテンツ名をクリックすると簡易説明が開きます。読み込み後の最初は二回クリックしないと反応しない。<br><br>
-                好きなプログラミング言語は、最近Swiftだけど書いているのはJava。<br>
-                Swiftはチャラくないので好き。モダンだからチャラそうなのに、
-                最近ありがちな型自由です！宣言いらない！じゃなくて、あえての型指定しないといけないところが好き。硬派〜〜〜！！！
+                今までの開発物とかやりたいこととか。<br>
+                コンテンツ名をクリックすると簡易説明が開きます。ロード直後は２回クリックしないと反応しない。<br><br>
+                好きな言語は、最近Swiftだけど書いているのはJava。Swiftの私の中のイメージカラーはミルキーブルーです。<br>
             </p>
         </div>
 
         <div class="wrapper">
             <div class="development-example">
                 <div class="example-text">
-                    <p class="btn" onclick="change_hidden(0)">DeliBook　(クリックで開閉)</p>
+                    <p class="btn" onclick="change_hidden(0)">DeliBook (大学の演習授業で開発したRailsアプリ)</p>
                 </div>
                 <div class="development-intro">
                     <div class="development-sample">
@@ -49,8 +47,8 @@
                         </div>
                         <div class="sample-text">
                             <p>
-                                トップページ<br><br>
-                                テキストテキスト<br>
+                                「本好きだけど図書館いいくのは面倒臭い、本重い、雨の日に濡れないようにするの手間」<br>
+                                と言う怠惰な課題を解決するために企画した<br>
                             </p>
                         </div>
                     </div>
@@ -60,9 +58,8 @@
                         </div>
                         <div class="sample-text">
                             <p>
-                                所蔵されている本の一覧<br><br>
-                                一般ユーザとしてログイン済み。<br>
-                                テキストテキスト<br>
+                                条件なしで検索をかけると蔵書一覧表示。<br>
+                                著者が複数いるので、DBが多対多になり苦労した。<br>
                             </p>
                         </div>
                     </div>
@@ -72,21 +69,29 @@
                         </div>
                         <div class="sample-text">
                             <p>
-                                貸出履歴一覧<br><br>
-                                図書館職員としてログイン済み。<br>
-                                テキストテキスト<br>
+                                図書館職員としてログイン済みなので、全ユーザの履歴が見える。<br>
+                                本の在庫数によって色々な状態があるので<br>
+                                区別することに苦労した<br>
                             </p>
                         </div>
                     </div>
                     <div class="development-sample">
                         <div class="sample-image">
-                            <img src="image/development_img/delibook_sample4.png">
+                            <img src="image/development_img/delibook_gamen.png">
                         </div>
                         <div class="sample-text">
                             <p>
-                                本を追加するフォーム。<br><br>
-                                図書館職員としてログイン済み。<br>
-                                テキストテキスト<br>
+                                画面遷移図。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="development-sample">
+                        <div class="sample-image">
+                            <img src="image/development_img/delibook_er.png">
+                        </div>
+                        <div class="sample-text">
+                            <p>
+                                ER図。開発途中のメモが書き込んであるものしか残っていなかった<br>
                             </p>
                         </div>
                     </div>
@@ -105,7 +110,7 @@
                         <div class="sample-text">
                             <p>
                                 正規表現をチェックするCLIアプリ。<br>
-                                ちょっとした課題だけど、個人的に感動したので。<br>
+                                ちょっとした課題だけど個人的に感動したので。<br>
                                 引数に正規表現とファイルを渡す。<br>
                             </p>
                         </div>
@@ -183,6 +188,7 @@
                             <p>
                                 GASで開発。<br>
                                 ChatWorkに未完了のタスクがあるとき、Twitterの名前に勝手にそのことが追記されるプログラム。これ結構便利。<br>
+                                APIを叩いてみたかったのも開発理由の１つ。<br>
                             </p>
                         </div>
                     </div>
@@ -191,7 +197,7 @@
 
             <div class="development-example">
                 <div class="example-text">
-                    <p class="btn" onclick="change_hidden(6)">TaskTweet(iOSアプリ）</p>
+                    <p class="btn" onclick="change_hidden(6)">TaskTweet(iOSのTODOアプリ）</p>
                 </div>
                 <div class="development-intro">
                     <div class="development-sample">
@@ -199,8 +205,9 @@
                             <img src="image/development_img/noImageFile.png">
                         </div>
                         <div class="sample-text">
-                            <p>縦長なので画像なし。<br>
-                                毎日の自分を振り返ろうと思って開発したToDoアプリ。タスク消化毎にスコアが加算され、Twitterに投稿できる。<br>
+                            <p>縦長なので画像なし。習慣づけのために作った。
+                                タスク消化毎にスコアが増え、Twitterに投稿できる。<br>
+                                有償デベロッパじゃないのでストアにリリースできず、実機登録後一週間でロックされる。<br>
                             </p>
                         </div>
                     </div>
